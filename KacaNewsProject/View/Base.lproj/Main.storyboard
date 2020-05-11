@@ -159,75 +159,73 @@
             </objects>
             <point key="canvasLocation" x="611.59420289855075" y="34.821428571428569"/>
         </scene>
-        <!--Headlines-->
-        <scene sceneID="J1F-1F-fVe">
+        <!--Headline View Controller-->
+        <scene sceneID="hh5-mo-EkV">
             <objects>
-                <viewController storyboardIdentifier="headlineStoryboard" id="i2E-zi-U1T" customClass="HeadlineViewController" customModule="KacaNewsProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XHf-DB-YPc">
+                <viewController storyboardIdentifier="headlineStoryboard" id="2jY-Yf-9rC" customClass="HeadlineViewController" customModule="KacaNewsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yyk-FA-tc0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SIk-iH-XZI">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eXp-Yd-Ur3">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="headlineCell" rowHeight="200" id="Qqi-Wo-3oR" customClass="HeadlineTableViewCell" customModule="KacaNewsProject" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="headlineCell" rowHeight="200" id="5tZ-UZ-7H8" customClass="HeadlineTableViewCell" customModule="KacaNewsProject" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qqi-Wo-3oR" id="Ekz-cW-yiX" customClass="HeadlineTableViewCell" customModule="KacaNewsProject" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5tZ-UZ-7H8" id="dFB-5N-qUW">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwm-w5-Nhg">
-                                                    <rect key="frame" x="39" y="23" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GiJ-Jw-vuT">
+                                                    <rect key="frame" x="20" y="11" width="374" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xTQ-YD-0gA">
-                                                    <rect key="frame" x="40" y="61" width="334" height="128"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="onn-9t-1lx">
+                                                    <rect key="frame" x="0.0" y="36" width="414" height="164"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="xTQ-YD-0gA" firstAttribute="top" secondItem="Ekz-cW-yiX" secondAttribute="topMargin" constant="50" id="10A-vg-jWP"/>
-                                                <constraint firstItem="xTQ-YD-0gA" firstAttribute="leading" secondItem="Ekz-cW-yiX" secondAttribute="leadingMargin" constant="20" id="3dg-kH-Pbe"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="xTQ-YD-0gA" secondAttribute="trailing" constant="20" id="bUt-bs-NV7"/>
-                                                <constraint firstItem="xTQ-YD-0gA" firstAttribute="bottom" secondItem="Ekz-cW-yiX" secondAttribute="bottomMargin" id="oO8-Li-x7P"/>
+                                                <constraint firstItem="onn-9t-1lx" firstAttribute="top" secondItem="GiJ-Jw-vuT" secondAttribute="bottom" constant="4" id="6JH-z7-OEG"/>
+                                                <constraint firstItem="onn-9t-1lx" firstAttribute="leading" secondItem="dFB-5N-qUW" secondAttribute="leading" id="D3s-QM-r00"/>
+                                                <constraint firstAttribute="bottom" secondItem="onn-9t-1lx" secondAttribute="bottom" id="R8X-rb-XcQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="onn-9t-1lx" secondAttribute="trailing" id="RAM-Rp-IQD"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="GiJ-Jw-vuT" secondAttribute="trailing" id="bU9-gT-6pO"/>
+                                                <constraint firstItem="GiJ-Jw-vuT" firstAttribute="leading" secondItem="dFB-5N-qUW" secondAttribute="leadingMargin" id="cHg-cG-IAH"/>
+                                                <constraint firstItem="GiJ-Jw-vuT" firstAttribute="top" secondItem="dFB-5N-qUW" secondAttribute="topMargin" id="jBN-zU-GHp"/>
                                             </constraints>
-                                            <connections>
-                                                <outlet property="headlineImage" destination="xTQ-YD-0gA" id="fRo-O1-4rZ"/>
-                                            </connections>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="headlineImage" destination="xTQ-YD-0gA" id="jRq-7d-O9W"/>
-                                            <outlet property="headlineLabel" destination="Hwm-w5-Nhg" id="GsF-B6-GG2"/>
+                                            <outlet property="headlineImage" destination="onn-9t-1lx" id="5rq-dy-2qV"/>
+                                            <outlet property="headlineLabel" destination="GiJ-Jw-vuT" id="QAm-pt-Qwj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="i2E-zi-U1T" id="TkC-Px-K1R"/>
-                                    <outlet property="delegate" destination="i2E-zi-U1T" id="nyt-fV-Xn6"/>
+                                    <outlet property="dataSource" destination="2jY-Yf-9rC" id="O4e-l8-cf4"/>
+                                    <outlet property="delegate" destination="2jY-Yf-9rC" id="XtH-jE-EoR"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="SIk-iH-XZI" firstAttribute="leading" secondItem="Co8-ma-VzZ" secondAttribute="leading" id="Bp5-Dy-z6Y"/>
-                            <constraint firstItem="Co8-ma-VzZ" firstAttribute="bottom" secondItem="SIk-iH-XZI" secondAttribute="bottom" id="R1F-4L-GF2"/>
-                            <constraint firstItem="SIk-iH-XZI" firstAttribute="top" secondItem="Co8-ma-VzZ" secondAttribute="top" id="ZJ4-Kx-hwb"/>
-                            <constraint firstItem="Co8-ma-VzZ" firstAttribute="trailing" secondItem="SIk-iH-XZI" secondAttribute="trailing" id="ws8-t4-jUt"/>
+                            <constraint firstItem="9Kp-P6-0zf" firstAttribute="trailing" secondItem="eXp-Yd-Ur3" secondAttribute="trailing" id="A8W-vb-JST"/>
+                            <constraint firstItem="eXp-Yd-Ur3" firstAttribute="top" secondItem="9Kp-P6-0zf" secondAttribute="top" id="Utm-O6-3cy"/>
+                            <constraint firstItem="eXp-Yd-Ur3" firstAttribute="leading" secondItem="9Kp-P6-0zf" secondAttribute="leading" id="tkG-Dc-FfF"/>
+                            <constraint firstItem="9Kp-P6-0zf" firstAttribute="bottom" secondItem="eXp-Yd-Ur3" secondAttribute="bottom" id="yyx-Ah-adW"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Co8-ma-VzZ"/>
+                        <viewLayoutGuide key="safeArea" id="9Kp-P6-0zf"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Headlines" id="eqg-MB-Pc3"/>
                     <connections>
-                        <outlet property="headlineTableView" destination="SIk-iH-XZI" id="WI9-6u-KJp"/>
+                        <outlet property="headlineTableView" destination="eXp-Yd-Ur3" id="q2y-A2-JKo"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="41W-xP-ieP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="97a-fd-bV7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1389.8550724637682" y="34.821428571428569"/>
+            <point key="canvasLocation" x="1328" y="35"/>
         </scene>
         <!--Content-->
         <scene sceneID="8Fc-1Y-bCX">
